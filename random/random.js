@@ -4,7 +4,8 @@ export default class Random {
         this.queote = queote;
     }
     getRandomImage() {
-        fetch('https://picsum.photos/200/300', {
+        const url = 'https://picsum.photos/200/300';
+        fetch(url, {
             method: 'GET'
         })
             .then(data => {
@@ -12,7 +13,8 @@ export default class Random {
             })
     }
     getRandomQueote() {
-        fetch('https://api.adviceslip.com/advice', {
+        const url = 'https://api.adviceslip.com/advice';
+        fetch(url, {
             method: 'GET'
         })
             .then(response => response.json())
