@@ -9,7 +9,7 @@ export default class Random {
             method: 'GET'
         })
             .then(data => {
-                this.app.style.background = `url(${data.url})  no-repeat`;
+                this.app.style.background = `url(${data.url})  center/contain no-repeat`;
             })
     }
     getRandomQueote() {
