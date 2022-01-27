@@ -33,9 +33,18 @@ export default class Todo {
             const span = document.createElement('span');
             const button = document.createElement('button');
             button.addEventListener('click', new Todo().handleDelete);
-            span.innerText = todo;
             button.innerText = '❌';
+            span.innerText = todo;
+            span.style.color = '#FF6363';
+            span.style.fontWeight = 'bold';
             li.dataset.id = item.id;
+            li.style.display = 'flex';
+            li.style.justifyContent = 'space-between';
+            li.style.backgroundColor = 'white';
+            li.style.opacity = '0.7';
+            li.style.marginBottom = '5px';
+            li.style.borderRadius = '5px';
+            li.style.padding = "5px"
             li.appendChild(span);
             li.appendChild(button);
             ul.appendChild(li);

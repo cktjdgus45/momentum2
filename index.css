@@ -18,7 +18,7 @@ body{
     position: relative;
     height: 100vh;
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(90deg,#ECB390  0%, #C0D8C0 50%, #DD4A48 100%);
 }
 
 li,ul{
@@ -37,6 +37,10 @@ button{
 
 /* logical */
 .location-info{
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+    opacity: 0.5;
     right: 45px;
     top: 45px;
     position: absolute;
@@ -63,11 +67,11 @@ button{
 .times{
     font-size: 4.5rem;
     font-weight: bold;
-    color: white;
+    color: #FF6363;
 }
 .todo{
     width: 380px;
-    color: #fff;
+    color: #FF6363;
 }
 
 .todo-ask{
@@ -75,7 +79,7 @@ button{
 }
 
 .todo-input{
-    color: gray;
+    color: #9D5353;
     font-weight: bold;
     font-size: 15px;
     width: 80%;
