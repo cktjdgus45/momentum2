@@ -21,6 +21,8 @@ export default class Todo {
         button.innerText = '❌';
         li.appendChild(span);
         li.appendChild(button);
+        li.className = 'todotodo';
+        span.className = 'todoSpan';
         ul.appendChild(li);
     }
     renderPaintTodo() {
@@ -35,16 +37,9 @@ export default class Todo {
             button.addEventListener('click', new Todo().handleDelete);
             button.innerText = '❌';
             span.innerText = todo;
-            span.style.color = '#FF6363';
-            span.style.fontWeight = 'bold';
             li.dataset.id = item.id;
-            li.style.display = 'flex';
-            li.style.justifyContent = 'space-between';
-            li.style.backgroundColor = 'white';
-            li.style.opacity = '0.7';
-            li.style.marginBottom = '5px';
-            li.style.borderRadius = '5px';
-            li.style.padding = "5px"
+            li.className = 'todotodo';
+            span.className = 'todoSpan';
             li.appendChild(span);
             li.appendChild(button);
             ul.appendChild(li);

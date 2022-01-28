@@ -89,3 +89,17 @@ button{
     border-radius: 15px;
 }
 
+.todotodo{
+    background-color: black;
+    display : flex;
+    justify-content : space-between;
+    background-color : white;
+    opacity : 0.7;
+    margin-bottom : 5px;
+    border-radius : 5px;
+    padding:5px
+}
+.todoSpan{
+    color: #FF6363;
+    font-weight: bold;
+}
