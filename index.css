@@ -58,6 +58,18 @@ button{
     margin-top: 2.5em;
     margin-bottom: 1em;
     overflow-y: scroll;
+    width: 200px;
+}
+.todos::-webkit-scrollbar {
+    width: 7px; /*스크롤바의 너비*/
+}
+
+.todos::-webkit-scrollbar-thumb {
+    background-color: #FF6363; /*스크롤바의 색상*/
+}
+
+.todos::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .login,.timeContainer,.todo{
