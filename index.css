@@ -116,3 +116,10 @@ button{
     color: #FF6363;
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+    .location-info {
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
